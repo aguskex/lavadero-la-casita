@@ -1,0 +1,125 @@
+* {
+  --primary-color: #3498db;
+}
+
+body {
+  color: #555; /* Steel Gray */
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-link {
+  font-size: 18px !important;
+  font-weight: 500;
+}
+
+.header{
+  background-image: linear-gradient(180deg, #c4b6fd, #93acfc);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 300px;
+}
+
+.text-primary {
+  color: #0a58ca !important;
+}
+
+.btn-primary {
+  background-color: #276dd4 !important;
+  border: none;
+}
+
+.nav-link:hover {
+  color: #0a58ca;
+}
+
+p {
+  font-size: 18px;
+}
+.btn-primary:hover {
+  background-color: #257dfd !important;
+}
+
+.blue-bg {
+  background-color: #0a58ca;
+  color: #fff;
+}
+
+.ionicons {
+  color: #0a58ca;
+  padding: 10px;
+  height: 30px;
+  width: 30px;
+  margin-bottom: 12px;
+}
+
+.nav-tabs {
+  border: none;
+}
+
+.nav-tabs .active {
+  background-color: #0a58ca !important;
+  border: none;
+  color: #fff !important;
+}
+
+.texto{
+  background-color: #93acfc;
+  border-radius: 15px;
+}
+
+.separator {
+  border: none;
+  height: 1.5px;
+  background-color: #c4b6fd; 
+}
+
+.accordion-body {
+  text-align: center; /* Centra todo el contenido del body */
+}
+
+.img-menu {
+  display: block;    /* Hace que la imagen sea un bloque */
+  margin: 0 auto;    /* Centra la imagen horizontalmente */
+  max-width: 60%;   /* Asegura que la imagen no exceda el contenedor */
+  height: auto;      /* Mantiene la proporción de la imagen */
+}
+
+.accordion-body p {
+  margin-top: 10px;  /* Añade un espacio entre la imagen y el texto */
+}
+
+.footer {
+  background-image: linear-gradient(180deg, #9a8cfc, #6d7bfd);
+  color: #fff;                /* Texto blanco */
+  text-align: center;         /* Centrar contenido */
+  padding: 20px 10px;         /* Espaciado */
+  font-family: Arial, sans-serif;
+  border-top-left-radius: 300px;  /* Esquinas redondeadas */
+  border-top-right-radius: 30px;
+}
+
+.footer-content h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.footer-links {
+  margin-top: 15px;
+}
+
+.footer-link {
+  display: inline-block;
+  margin: 5px 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-link:hover {
+  color: #2a2b2c;             /* Cambia color al pasar el cursor */
+}
+
+.footer-link ion-icon {
+  margin-right: 8px;          /* Espacio entre ícono y texto */
+  vertical-align: middle;
+  font-size: 1.2rem;
+}
