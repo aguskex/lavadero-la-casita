@@ -128,4 +128,7 @@ p {
   .footer-link p{
       display: none; /* Ocultar la barra lateral en pantallas pequeñas */
     }
+  .remover {
+      display: none;
+    }
 }
