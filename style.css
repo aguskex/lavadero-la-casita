@@ -125,7 +125,7 @@ p {
 }
 
 @media (max-width: 768px) {
-    .footer-content h3 {
-        display: none; /* Ocultar la barra lateral en pantallas pequeñas */
+  .footer-link {
+      display: none; /* Ocultar la barra lateral en pantallas pequeñas */
     }
 }
