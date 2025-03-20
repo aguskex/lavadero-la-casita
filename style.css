@@ -13,9 +13,15 @@ h1, h2, h3 {
   line-height: 1.2;
 }
 
+.navbar {
+  position: relative;
+  z-index: 1000; /* Asegura que la navbar esté por encima de otros elementos */
+}
+
 .nav-link {
   font-size: 18px !important;
   font-weight: 500;
+  color: #fff;
 }
 
 .flags{
@@ -130,7 +136,6 @@ p {
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  margin-top: 20px;
 }
 
 .footer-link {
@@ -174,23 +179,222 @@ p {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Estilos para el menú desplegable de idiomas */
+.dropdown {
+  width: 20vh;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  padding: 0;
+  position: relative;
+  z-index: 1001; /* Asegura que el dropdown esté por encima de la navbar */
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  border: none;
+  font-weight: 500;
+  padding: 12px 16px;
+  width: 100%;
+  text-align: left;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown-toggle::after {
+  margin-left: auto; /* Mueve la flecha del dropdown a la derecha */
+}
+
+.dropdown-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: absolute;
+  z-index: 1002; /* Asegura que el menú desplegable esté por encima de todo */
+}
+
+
+.dropdown-item {
+  font-size: 16px;
+  color: #555;
+  padding: 10px 16px; /* Aumenta el padding para un área de clic más grande */
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: var(--primary-color);
+}
+
+.nav-item .btn-primary {
+  padding: 10px 20px; /* Ajusta el padding para un área de clic más grande */
+  display: inline-block;
+  text-align: center;
+  width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+/* Estilos para el botón de WhatsApp */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 1000;
+}
+
+.whatsapp-button:hover {
+  background-color: #128c7e;
+  transform: translateY(-2px);
+}
+
+.whatsapp-button ion-icon {
+  font-size: 30px;
+}
+
+/* Estilos para el botón de Volver arriba */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 1000;
+  border: none;
+  cursor: pointer;
+}
+
+.scroll-to-top:hover {
+  background-color: #257dfd;
+  transform: translateY(-2px);
+}
+
+.scroll-to-top ion-icon {
+  font-size: 30px;
+}
+/* Estilos para el enlace de WhatsApp */
+.whatsapp-link {
+  display: inline-flex;
+  align-items: center;
+  color: #259cd3; /* Color de WhatsApp */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.whatsapp-link:hover {
+  color: #128c7e; /* Color de WhatsApp al hacer hover */
+}
+
+.whatsapp-icon {
+  font-size: 1em; /* Mismo tamaño que la fuente */
+  margin-right: 5px; /* Espaciado entre el ícono y el texto */
+}
+
+.horarios-text {
+  font-size: 18px; /* Tamaño base para móvil */
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.horario-destacado {
+  font-weight: bold; /* Texto en negrita */
+  color: var(--primary-color); /* Color primario (azul) */
+}
+
+@media (min-width: 768px) {
+  .horarios-text {
+    font-size: 20px; /* Tamaño más grande para computadora */
+  }
+}
+
+@media (max-width: 767px) {
+  .horarios-text {
+    font-size: 16px; /* Tamaño ligeramente más pequeño para móvil */
+  }
+}
+
 @media (max-width: 768px) {
-  .footer-link p{
-      display: none;
-    }
+  .navbar-collapse {
+    position: absolute;
+    right: 0;
+    top: 100%; /* Lo coloca justo debajo del navbar */
+    background-color: #f8f9fa; /* Fondo gris claro */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  }
+  .navbar-nav {
+    margin-left: auto; /* Alinea los elementos del menú a la derecha */
+  }
+  .navbar-toggler {
+    margin-left: auto; /* Alinea el botón de hamburguesa a la derecha */
+  }
+  .navbar-nav .nav-item {
+    margin: 5px 0; /* Espaciado entre elementos del menú */
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 15px; /* Padding para los enlaces */
+    color: #333; /* Color del texto */
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .navbar-nav .nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Efecto hover */
+  }
   .remover {
       display: none;
-    }
+  }
+  .footer {
+    padding: 30px 15px; /* Reducir el padding en móvil */
+    border-top-left-radius: 150px; /* Ajustar el radio de borde */
+    border-top-right-radius: 20px;
+  }
   .footer-title {
-    font-size: 1.5rem;
+    font-size: 1.8rem; /* Tamaño más grande para el título en móvil */
+    margin-bottom: 15px;
+  }
+  .footer-links {
+    flex-direction: column; /* Apilar los enlaces verticalmente */
+    gap: 10px;
+  }
+  .footer-link {
+    font-size: 1.1rem; /* Tamaño de fuente más grande para móvil */
+    justify-content: center; /* Centrar los enlaces */
   }
   .footer-link ion-icon {
     font-size: 1.5rem;
   }
   .footer-link p {
-    display: none;
+    display: inline;
+    margin-left: 5px;
   }
   .img-menu {
     max-width: 80%;
+  }
+  .dropdown {
+    width: 12vh;
   }
 }
