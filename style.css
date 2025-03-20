@@ -15,7 +15,7 @@ h1, h2, h3 {
 
 .navbar {
   position: relative;
-  z-index: 1000; /* Asegura que la navbar esté por encima de otros elementos */
+  z-index: 1000;
 }
 
 .nav-link {
@@ -24,7 +24,7 @@ h1, h2, h3 {
   color: #fff;
 }
 
-.flags{
+.flags {
   width: 75px;
   display: flex;
   align-items: center;
@@ -40,7 +40,7 @@ h1, h2, h3 {
   cursor: pointer;
 }
 
-.header{
+.header {
   background-image: linear-gradient(180deg, #c4b6fd, #93acfc);
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 300px;
@@ -82,7 +82,7 @@ p {
   color: #fff !important;
 }
 
-.texto{
+.texto {
   background-color: #93acfc;
   border-radius: 15px;
 }
@@ -90,7 +90,7 @@ p {
 .separator {
   border: none;
   height: 1.5px;
-  background-color: #c4b6fd; 
+  background-color: #c4b6fd;
 }
 
 .accordion-body {
@@ -179,14 +179,13 @@ p {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilos para el menú desplegable de idiomas */
 .dropdown {
   width: 20vh;
   background-color: var(--primary-color);
   border-radius: 8px;
   padding: 0;
   position: relative;
-  z-index: 1001; /* Asegura que el dropdown esté por encima de la navbar */
+  z-index: 1001;
 }
 
 .dropdown-toggle {
@@ -203,7 +202,7 @@ p {
 }
 
 .dropdown-toggle::after {
-  margin-left: auto; /* Mueve la flecha del dropdown a la derecha */
+  margin-left: auto;
 }
 
 .dropdown-toggle:hover {
@@ -215,14 +214,13 @@ p {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
   position: absolute;
-  z-index: 1002; /* Asegura que el menú desplegable esté por encima de todo */
+  z-index: 1002;
 }
-
 
 .dropdown-item {
   font-size: 16px;
   color: #555;
-  padding: 10px 16px; /* Aumenta el padding para un área de clic más grande */
+  padding: 10px 16px;
 }
 
 .dropdown-item:hover {
@@ -231,13 +229,12 @@ p {
 }
 
 .nav-item .btn-primary {
-  padding: 10px 20px; /* Ajusta el padding para un área de clic más grande */
+  padding: 10px 20px;
   display: inline-block;
   text-align: center;
-  width: 100%; /* Ocupa todo el ancho disponible */
+  width: 100%;
 }
 
-/* Estilos para el botón de WhatsApp */
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
@@ -264,7 +261,6 @@ p {
   font-size: 30px;
 }
 
-/* Estilos para el botón de Volver arriba */
 .scroll-to-top {
   position: fixed;
   bottom: 20px;
@@ -292,44 +288,44 @@ p {
 .scroll-to-top ion-icon {
   font-size: 30px;
 }
-/* Estilos para el enlace de WhatsApp */
+
 .whatsapp-link {
   display: inline-flex;
   align-items: center;
-  color: #259cd3; /* Color de WhatsApp */
+  color: #259cd3;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .whatsapp-link:hover {
-  color: #128c7e; /* Color de WhatsApp al hacer hover */
+  color: #128c7e;
 }
 
 .whatsapp-icon {
-  font-size: 1em; /* Mismo tamaño que la fuente */
-  margin-right: 5px; /* Espaciado entre el ícono y el texto */
+  font-size: 1em;
+  margin-right: 5px;
 }
 
 .horarios-text {
-  font-size: 18px; /* Tamaño base para móvil */
+  font-size: 18px;
   line-height: 1.6;
   margin-bottom: 10px;
 }
 
 .horario-destacado {
-  font-weight: bold; /* Texto en negrita */
-  color: var(--primary-color); /* Color primario (azul) */
+  font-weight: bold;
+  color: var(--primary-color);
 }
 
 @media (min-width: 768px) {
   .horarios-text {
-    font-size: 20px; /* Tamaño más grande para computadora */
+    font-size: 20px;
   }
 }
 
 @media (max-width: 767px) {
   .horarios-text {
-    font-size: 16px; /* Tamaño ligeramente más pequeño para móvil */
+    font-size: 16px;
   }
 }
 
@@ -337,52 +333,50 @@ p {
   .navbar-collapse {
     position: absolute;
     right: 0;
-    top: 100%; /* Lo coloca justo debajo del navbar */
-    background-color: #f8f9fa; /* Fondo gris claro */
+    top: 100%;
+    background-color: #f8f9fa;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    z-index: 1000;
   }
   .navbar-nav {
-    margin-left: auto; /* Alinea los elementos del menú a la derecha */
+    margin-left: auto;
   }
   .navbar-toggler {
-    margin-left: auto; /* Alinea el botón de hamburguesa a la derecha */
+    margin-left: auto;
   }
   .navbar-nav .nav-item {
-    margin: 5px 0; /* Espaciado entre elementos del menú */
+    margin: 5px 0;
   }
-
   .navbar-nav .nav-link {
-    padding: 10px 15px; /* Padding para los enlaces */
-    color: #333; /* Color del texto */
+    padding: 10px 15px;
+    color: #333;
     border-radius: 4px;
     transition: background-color 0.3s ease;
   }
-
   .navbar-nav .nav-link:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* Efecto hover */
+    background-color: rgba(0, 0, 0, 0.1);
   }
   .remover {
-      display: none;
+    display: none;
   }
   .footer {
-    padding: 30px 15px; /* Reducir el padding en móvil */
-    border-top-left-radius: 150px; /* Ajustar el radio de borde */
+    padding: 30px 15px;
+    border-top-left-radius: 150px;
     border-top-right-radius: 20px;
   }
   .footer-title {
-    font-size: 1.8rem; /* Tamaño más grande para el título en móvil */
+    font-size: 1.8rem;
     margin-bottom: 15px;
   }
   .footer-links {
-    flex-direction: column; /* Apilar los enlaces verticalmente */
+    flex-direction: column;
     gap: 10px;
   }
   .footer-link {
-    font-size: 1.1rem; /* Tamaño de fuente más grande para móvil */
-    justify-content: center; /* Centrar los enlaces */
+    font-size: 1.1rem;
+    justify-content: center;
   }
   .footer-link ion-icon {
     font-size: 1.5rem;
